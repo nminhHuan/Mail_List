@@ -28,13 +28,13 @@ public class EmailListServlet extends HttpServlet {
         else if (action.equals("add")) {
 
             // get parameters from the request
-            String firstName = request.getParameter("first_name");
-            String lastName = request.getParameter("last_name");
+            String firstName = request.getParameter("firstName");
+            String lastName = request.getParameter("lastName");
             String email = request.getParameter("email");
-            String dob = request.getParameter("date_of_birth");
-            String hear = request.getParameter("hear");
+            String dob = request.getParameter("dateOfBirth");
+            String hear = request.getParameter("heardFrom");
             String[] values = request.getParameterValues("receive");
-            String contact = request.getParameter("contact");
+            String contact = request.getParameter("contactBy");
             // store data in User object and save User object in database
             User user = new User(firstName, lastName, email, dob, hear, values, contact);
 
