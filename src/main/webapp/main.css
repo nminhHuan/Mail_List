@@ -5,7 +5,6 @@ body {
     margin: 20px;
 }
 
-
 h1 {
     color: #17587a;
     margin-bottom: 4px;
@@ -57,4 +56,28 @@ select {
 #submit {
     padding: 5px 15px;
     margin-top: 10px;
+}
+
+.info-row {
+    margin-bottom: 8px;
+}
+
+.info-row label {
+    display: inline-block;
+    min-width: 230px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.info-row span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info-row.section-start {
+    margin-top: 24px;
+}
+
+.return-text {
+    margin-top: 20px;
 }
